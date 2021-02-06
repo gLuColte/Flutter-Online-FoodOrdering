@@ -178,7 +178,7 @@ class SearchBox extends StatelessWidget {
     @required this.onChanged,
   }) : super(key: key);
 
-  final var onChanged;
+  final onChanged;
 
   @override
   Widget build(BuildContext context) {
