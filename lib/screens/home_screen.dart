@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_online_foodordering/constants.dart';
 import 'package:flutter_online_foodordering/widgets/home_screen_widgets.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -11,10 +9,13 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   ValueChanged<String> onChanged;
   int _currentIndex = 0;
+  TabController tabController;
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         drawer: leadDrawer(),
         endDrawer: endDrawer(),
         // appBar
@@ -24,22 +25,25 @@ class _HomeScreenState extends State<HomeScreen> {
           leading: leadingDrawer(),
           centerTitle: true,
           title: titleText(),
-          actions: <Widget>[
-            trailingDrawer()
-          ],
+          actions: <Widget>[trailingDrawer()],
         ),
         // Body
-        body: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              SearchBox(onChanged: onChanged),
-            ],
-          ),
+        body: Column(
+          children: <Widget>[
+            Expanded(flex: 1, child: SearchBox(onChanged: onChanged)),
+            Expanded(
+              flex: 5,
+              child: Column(
+                children: <Widget>[
+                  OfferTab(),
+                  DiscountTab(),
+                ],
+              ),
+            ),
+          ],
         ),
         // Bottom Navigation Bar
         bottomNavigationBar: bottomBar(currentIndex: _currentIndex),
       ),
-    );
-  }
+    );}
 }
