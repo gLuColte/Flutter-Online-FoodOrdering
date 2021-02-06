@@ -5,6 +5,7 @@ This repository contains FoodOrdering application tutorial based on The Flutter 
 #### Youtube Tutorial Page : https://www.youtube.com/watch?v=F0ujC60wHwc&ab_channel=TheFlutterWay
 
 The Design of the FoodOrdering Application is as follow:
+
 <img src="https://user-images.githubusercontent.com/67504821/107119289-c3149f80-68da-11eb-82fc-33bbe41056e1.png" width="600">
 
 <p float="left">
