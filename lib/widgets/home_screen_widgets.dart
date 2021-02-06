@@ -112,6 +112,7 @@ class endDrawer extends StatelessWidget {
                   children: <Widget>[
                     IconButton(
                       icon: SvgPicture.asset("assets/icons/macdonalds.svg", color: kPrimaryColor,),
+                      onPressed: (){},
                     ),
                     Text("McDonalds"),
                   ],
