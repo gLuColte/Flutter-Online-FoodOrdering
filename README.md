@@ -2,11 +2,11 @@
  
 This repository contains FoodOrdering application tutorial based on The Flutter Way youtube channel.
 
-#### Youtube Tutorial Page : https://www.youtube.com/watch?v=F0ujC60wHwc&ab_channel=TheFlutterWay
-
 The Design of the FoodOrdering Application is as follow:
 
 <img src="https://user-images.githubusercontent.com/67504821/107119289-c3149f80-68da-11eb-82fc-33bbe41056e1.png" width="600">
+
+#### Youtube Tutorial Page : https://www.youtube.com/watch?v=F0ujC60wHwc&ab_channel=TheFlutterWay
 
 <p float="left">
   <img src="https://user-images.githubusercontent.com/67504821/107119291-c4de6300-68da-11eb-9350-c12dcdb04879.gif" width="300">
